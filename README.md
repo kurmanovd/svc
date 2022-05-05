@@ -7,7 +7,16 @@
 
 ## Start
 
-* `docker-compose up -d`
+* Create file `.env`
+
+  ```bash
+  PGADMIN_DEFAULT_EMAIL=pgadmin4@pgadmin.org
+  PGADMIN_DEFAULT_PASSWORD=admin
+  PGADMIN_PORT=5050
+  ```
+
+* Export environments `. export-env.sh`
+* Run `docker-compose up -d`
 
 ## Environments
 
