@@ -1,0 +1,14 @@
+services:  
+  debian:
+    container_name: debian
+    image: debian:bullseye
+    restart: unless-stopped
+    command: sleep 100000
+    volumes:
+       - /home/kurmanovd/Documents/Temp:/var/temp
+    networks:
+      - debian
+
+networks:
+  debian:
+    driver: bridge
