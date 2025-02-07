@@ -1,11 +1,13 @@
-# PgAdmin
+# SVC
 
-## Requirements
+## PgAdmin
+
+### Requirements
 
 * docker
 * docker-compose
 
-## Start
+### Start
 
 * Create file `.env`
 
@@ -18,7 +20,7 @@
 * Export environments `. export-env.sh`
 * Run `docker-compose up -d`
 
-## Environments
+### Environments
 
 This Compose file contains the following environment variables:
 
@@ -28,8 +30,12 @@ This Compose file contains the following environment variables:
 | PGADMIN_DEFAULT_EMAIL       | Email                                              | pgadmin4@pgadmin.org | false     |
 | PGADMIN_DEFAULT_PASSWORD    | Default password                                   | admin                | false     |
 
-## Access
+### Access
 
 * **URL:** `http://localhost:5050`
 * **Username:** pgadmin4@pgadmin.org
 * **Password:** admin
+
+## Node-exporter
+
+Локальный node-exporter + Prometheus (PV) + Grafana
